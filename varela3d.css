@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    font-family: Merriweather , sans-serif;
+}
+
+body {
+    background: #eee;
+}
+
+.navegador {
+    backdrop-filter: blur(5px);
+    background: #fff9;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1000;
+}
+
+.enlaces:hover {
+    background-color: #D8D8D8;
+    backdrop-filter: blur(5px);
+}
+
+.enlaces {
+    padding: 30px;
+    color: #222;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo {
+    width: 200px;
+    height:100px;
+    object-fit: cover;
+}
+
+.title {
+    color: #222;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    font-size: 60px;
+}
+
+.titledown {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*----------------------SLIDER---------------------*/
+
+.contslider {
+	overflow: hidden;
+	width: 90%;
+	max-width: 600px;
+	margin:  auto;
+	border-radius: 5px;
+	box-shadow: 0 0 0 2px #fff,
+	 			0 10px 60px;
+	position: relative; 
+}
+
+.slider {
+	display: flex;
+	width: 550%;
+	height: 500px;
+	margin-left: -115%;
+}
+
+.sld-img {
+	display: block;
+	object-fit: cover;	
+	width: 100%;
+	height: 100%;
+}
+
+.slid-img {
+	width: 100%;
+}
+
+.boton-right {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+    left: 95%;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: monospace;
+    cursor: pointer;
+    color: #eee;
+}
+
+.boton-left {  
+	position: absolute;	
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	right: 95%;
+	border-radius: 50%;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	font-family: monospace;
+	cursor: pointer;
+	color: #eee;
+}
+
+.boton-left:hover {
+	color: #555;	
+}
+.boton-right:hover {
+	color: #555;
+}
+
+/*--------------INFORMACION---------------*/
+
+.conteiner-info {
+    border-top: 1px solid #222;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.title.info {
+    color: #222;
+    text-align: left;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    transform: translate(-200px);
+    opacity: 0;
+}
+
+.info-up {
+    transform: none;
+    opacity: 1;
+}
+
+.impresora {
+    margin-top: 50px;
+
+}
+
+.texto {
+    margin-top: 60px;
+}
+
+/*---------------------------menus---------------------------*/
+
+.menuizq {
+    height: 100vh;
+    width: 200px;
+    background-color: #222;
+    top: 80px;
+    position: fixed;
+    transform: translate(-200px);
+    z-index: 1001;
+}
+
+.categorias {
+    padding: 0;
+    color: #D8D8D8;
+}
+
+.formas {
+    list-style: none;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.formas:hover  {
+    background-color: #555;
+}
+
+.redes:hover {
+    background-color: #555;
+}
+
+.links-redes {
+    text-decoration: none;
+    color: #D8D8D8;
+}
+
+.mostrar {
+    transform: none;
+}
+
+.contact {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.lista {
+    padding: 0;
+    cursor: pointer;
+}
+
+.redes {
+    list-style: none;
+    text-align: center;
+    padding: 30px;
+}
+
+.menuder {
+    height: 100vh;
+    width: 200px;
+    background-color: #222;
+    top: 80px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    color: #f4f4f4;
+    transform: translate(200px);
+    z-index: 1002;
+}
+
+.mostrar2 {
+    transform: none;
+}
+
+/*---------------------galery-----------------------*/
+
+.conteiner-galeria {
+    width: 80%;
+    margin-left: 15%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 10px;
+    object-fit: cover;
+    margin-top: 50px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 400px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+}
+
+.container:hover .image {
+    opacity: 0.5;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
