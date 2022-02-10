@@ -21,9 +21,14 @@ body {
     z-index: 1000;
 }
 
+.contenido {
+    background-color: #1119;
+    border-radius: 100px;
+    padding-top: 80px;
+}
+
 .enlaces:hover {
-    background-color: #D8D8D8;
-    backdrop-filter: blur(5px);
+    background-color: #fff5;
 }
 
 .enlaces {
@@ -41,9 +46,8 @@ body {
 }
 
 .title {
-    color: #222;
+    color: #CFCFCF;
     text-align: center;
-    padding-top: 80px;
     padding-bottom: 20px;
     font-size: 60px;
 }
@@ -51,6 +55,7 @@ body {
 .titledown {
     text-align: center;
     margin-bottom: 30px;
+    color: #CFCFCF;
 }
 
 /*----------------------SLIDER---------------------*/
@@ -124,14 +129,20 @@ body {
 /*--------------INFORMACION---------------*/
 
 .conteiner-info {
-    border-top: 1px solid #222;
+    border-top: 1px solid #111;
     margin-top: 100px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #0009;
+    border-radius: 50px;
 }
 
-.title.info {
-    color: #222;
-    text-align: left;
+.titulo {
+    color: #CFCFCF;
+    position: absolute;
+    left: 45%;
 }
 
 .info {
@@ -146,13 +157,36 @@ body {
     opacity: 1;
 }
 
-.impresora {
-    margin-top: 50px;
+.info2 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    transform: translate(200px);
+    opacity: 0;
+}
 
+.info2-up {
+    transform: none;
+    opacity: 1;
+}
+
+.filamento {
+    width: 300px;
+}
+
+.impresora {
+    width: 400px;
+    margin-top: 50px;
 }
 
 .texto {
-    margin-top: 60px;
+    margin-top: 100px;
+    color: #CFCFCF;
+}
+
+.texto2 {
+    margin-top: 100px;
+    color: #CFCFCF;
 }
 
 /*---------------------------menus---------------------------*/
@@ -189,6 +223,10 @@ body {
 .links-redes {
     text-decoration: none;
     color: #D8D8D8;
+}
+
+.links-redes:hover {
+    color: #f4f4f4;
 }
 
 .mostrar {
@@ -274,6 +312,7 @@ body {
 
 .container:hover .image {
     opacity: 0.5;
+    transform: scale(1.03);
 }
 
 .container:hover .middle {
@@ -292,4 +331,37 @@ body {
 
 .footer {
     margin-top: 100px;
+}
+
+@media screen and (max-width:450px){
+    
+    .impresora {
+        width: 300px;
+    }
+
+    .image {
+        width: 380px;
+    }
+
+    .conteiner-galeria {
+        margin: 0%;
+        width: min-content;
+    }
+
+    .contslider {
+        margin: 20px;
+        width: 100%;
+    }
+
+    .info2 {
+        flex-direction: column-reverse;
+    }
+
+    .texto1 .texto2 {
+        margin: 0;
+    }
+
+    .conteiner-galeria {
+        margin-top: 50px;
+    }
 }
