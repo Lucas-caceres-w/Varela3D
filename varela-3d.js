@@ -62,7 +62,7 @@ window.addEventListener('scroll', function()  {
 window.addEventListener('scroll', function()  {
 	let info2 = document.querySelector('.info2');
 	let obj2 = info2.getBoundingClientRect().top;
-	let screenSize = window.innerHeight/2;
+	let screenSize = window.innerHeight/2.5;
 
 		if (obj2 < screenSize) {
 			info2.classList.add('info2-up');
