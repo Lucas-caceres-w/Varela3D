@@ -4,7 +4,8 @@
 }
 
 body {
-    background: #eee;
+    background: url("https://www.wallpapertip.com/wmimgs/29-296024_3d-white-wallpaper-hd.jpg");
+    background-size: contain;
 }
 
 .navegador {
@@ -238,20 +239,29 @@ body {
     grid-gap: 10px;
     object-fit: cover;
     margin-top: 50px;
+    transform: translatey(100px);
+    opacity: 0;
+}
+
+.visible-conteiner {
+    transform: none;
+    opacity: 1;
 }
 
 .container {
     position: relative;
-    width: 100%;
+    width: 80%;
 }
 
 .image {
     opacity: 1;
     display: block;
     width: 400px;
-    height: auto;
+    height: 400px;
+    border-radius: 20px;
     transition: .5s ease;
     backface-visibility: hidden;
+    object-fit: cover;
 }
 
 .middle {
@@ -276,4 +286,10 @@ body {
     font-size: 16px;
     border-radius: 5px;
     padding: 10px 15px;
+}
+
+/*--------------------------footer------------*/
+
+.footer {
+    margin-top: 100px;
 }
