@@ -78,8 +78,7 @@ window.addEventListener('scroll' , function(){
 		if (obj < screenSize) {
 			galeria.classList.add('visible-conteiner');
 			galeria.style.transition = '1s';
-		}
-	
+		}	
 })
 
 let btnizq = document.querySelector('.detail');
