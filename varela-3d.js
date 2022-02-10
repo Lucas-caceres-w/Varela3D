@@ -58,6 +58,18 @@ window.addEventListener('scroll', function()  {
 		}
 });
 
+
+window.addEventListener('scroll', function()  {
+	let info2 = document.querySelector('.info2');
+	let obj2 = info2.getBoundingClientRect().top;
+	let screenSize = window.innerHeight/2;
+
+		if (obj2 < screenSize) {
+			info2.classList.add('info2-up');
+			info2.style.transition = '1s';
+		}
+});
+
 window.addEventListener('scroll' , function(){
 	let galeria = document.querySelector('.conteiner-galeria')
 	let obj = galeria.getBoundingClientRect().top;
