@@ -45,31 +45,51 @@ setInterval(function(){
 
 }, 6000);
 
-//-------------------------------------------------------------------//
+//-------------------------declaracionFunctions------------------------------------------//
+let btnizq = document.querySelector('.detail');
+let mostrar = document.querySelector('.menuizq');
+let btnder = document.querySelector('.contactme');
+let menu = document.querySelector('.menuder');
+let galeria = document.querySelectorAll('.container')
 
-window.addEventListener('scroll', function()  {
+let ScrollInfo = () => {
 	let info = document.querySelector('.info');
 	let obj = info.getBoundingClientRect().top;
-	let screenSize = window.innerHeight/3;
+	let screenSize = window.innerHeight/2;
 
 		if (obj < screenSize) {
 			info.classList.add('info-up');
-			info.style.transition = '1s';
+			info.style.transition = '.5s';
 		}
+}
+
+let scrollGaleria = () => galeria.forEach(el => {
+	let obj = el.getBoundingClientRect().top;
+	let screenSize = window.innerHeight/1;
+	
+	if (obj < screenSize) {
+		el.classList.add('container-vis');
+		el.style.transition = '.5s';
+	}
 });
 
-let btnizq = document.querySelector('.detail');
-let mostrar = document.querySelector('.menuizq');
-
-btnizq.addEventListener('click' , function(){
+let menuLeft = () => {
 	mostrar.classList.toggle('mostrar');
 	mostrar.style.transition = '0.5s';
-})
+}
 
-let btnder = document.querySelector('.contactme');
-let menu = document.querySelector('.menuder');
-
-btnder.addEventListener('click' , function(){
+let menuRight = () => {
 	menu.classList.toggle('mostrar2');
 	menu.style.transition = '0.5s';
-})
+}
+
+
+//--------------call---------------------------------------=>
+
+btnder.addEventListener('click' , menuRight)
+
+btnizq.addEventListener('click' , menuLeft)
+
+window.addEventListener('scroll' , () => scrollGaleria())
+
+window.addEventListener('scroll', () => ScrollInfo())
