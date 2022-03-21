@@ -270,10 +270,10 @@ function FormValidation() {
 				}, 2000);
 	})
 }
-	
-(()=>{
-   let fotos = document.querySelectorAll(".container")
-   let loader = document.querySelector(".loader-imagenes")
+
+function(){
+  let fotos = document.querySelectorAll(".container")
+  let loader = document.querySelector(".loader-imagenes")
    
    setTimeOut(() => {
     loader.classList.add("none")
@@ -282,9 +282,7 @@ function FormValidation() {
       e.style.transition = ".5s"
    })
    },2000);
-    
-})()
-
+}
 //-----------------------Funciones Calleadas------------------------------
 
 window.addEventListener('DOMContentLoaded' , () => {
