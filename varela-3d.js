@@ -271,18 +271,25 @@ function FormValidation() {
 	})
 }
 
-function(){
-  let fotos = document.querySelectorAll(".container")
-  let loader = document.querySelector(".loader-imagenes")
-   
-   setTimeOut(() => {
-    loader.classList.add("none")
-    fotos.forEach((e)=>{
-      e.classList.add("container-vis")
-      e.style.transition = ".5s"
-   })
-   },2000);
+function ImagenReemplazo(){
+	let loader = d.querySelector('.loader-imagenes')
+	loader.classList.add('none')
 }
+
+function Images(){
+	let fotos = d.querySelectorAll('.container')
+
+		fotos.forEach(e => {
+			setTimeout(() => {
+				e.style.display = "block"});
+			}, 2000);
+
+}
+
+setTimeout(() => {
+	ImagenReemplazo()
+	Images()
+}, 2000);
 //-----------------------Funciones Calleadas------------------------------
 
 window.addEventListener('DOMContentLoaded' , () => {
