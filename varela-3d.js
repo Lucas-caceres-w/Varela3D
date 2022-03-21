@@ -275,7 +275,7 @@ async function getData() {
 	const galeria = d.querySelector('.conteiner-galeria')
 		fragmento = d.createDocumentFragment();
 	try {
-		let res = await axios.get("/json/Productos.json"),
+		let res = await axios.get("json/Productos.json"),
 		json = await res.data;
 		/* console.log(res, json) */
 		json.forEach((e) => {
