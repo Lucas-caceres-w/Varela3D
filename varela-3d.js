@@ -270,37 +270,20 @@ function FormValidation() {
 				}, 2000);
 	})
 }
-
-async function getData() {
-	const galeria = d.querySelector('.conteiner-galeria')
-		fragmento = d.createDocumentFragment();
-	try {
-		let res = await axios.get("json/Productos.json"),
-		json = await res.data;
-		/* console.log(res, json) */
-		json.forEach((e) => {
-			const foto = d.createElement("div")
-				foto.classList.add('container')
-				foto.innerHTML = `<img class="image" src="${e.url}">`
-				fragmento.appendChild(foto)
-			const titulo = d.createElement('div')
-				titulo.classList.add('middle')
-				titulo.innerHTML = `<i class="text">${e.title}</i>`
-				foto.appendChild(titulo)
-		})
-		setTimeout(() => {
-			galeria.appendChild(fragmento)
-		}, 2000);
-	} catch (err) {
-		let mensaje = err.response.statusText || "Ocurrio un error!"
-			galeria.innerHTML = `<b class="error">ERROR <b style="color:red">${err.response.status}</b> ${mensaje}</b>`
-	} finally {
-		let loader = d.querySelector('.loader-imagenes')
-			setTimeout(() => {	
-				loader.classList.add('none')
-			}, 2000);
-	}
-}
+	
+(()=>{
+   let fotos = document.querySelectorAll(".container")
+   let loader = document.querySelector(".loader-imagenes")
+   
+   setTimeOut(() => {
+    loader.classList.add("none")
+    fotos.forEach((e)=>{
+      e.classList.add("container-vis")
+      e.style.transition = ".5s"
+   })
+   },2000);
+    
+})()
 
 //-----------------------Funciones Calleadas------------------------------
 
