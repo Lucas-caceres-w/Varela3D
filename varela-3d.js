@@ -271,43 +271,11 @@ function FormValidation() {
 	})
 }
 
-/* let LoadImages = () => {
-		const galeria = document.querySelector('.conteiner-galeria')
-		fragmento = document.createDocumentFragment();
-		fetch("/json/Productos.json")
-		.then((res) => (res.ok ? res.json() : Promise.reject(res)))
-		.then((json) => {
-			json.forEach((e) => {
-				const foto = document.createElement("div")
-					foto.classList.add('container')
-					foto.innerHTML = `<img class="image" src="${e.url}">`
-					fragmento.appendChild(foto)
-				const titulo = document.createElement('div')
-					titulo.classList.add('middle')
-					titulo.innerHTML = `<i class="text">${e.title}</i>`
-					foto.appendChild(titulo)
-			})
-			setTimeout(() => {
-				galeria.appendChild(fragmento)
-			}, 2000);
-		})
-		.catch((err) => {
-			let mensaje = err.statusText || "Ocurrio un error!"
-				galeria.innerHTML = `<b class="error">ERROR <b style="color:red">${err.status}</b> ${mensaje}</b>`
-		})
-		.finally(() => {
-			let loader = document.querySelector('.loader-imagenes')
-			setTimeout(() => {	
-				loader.classList.add('none')
-			}, 2000);
-		})
-} */
-
 async function getData() {
 	const galeria = d.querySelector('.conteiner-galeria')
 		fragmento = d.createDocumentFragment();
 	try {
-		let res = await axios.get("Productos.json"),
+		let res = await axios.get("/Productos.json"),
 		json = await res.data;
 		/* console.log(res, json) */
 		json.forEach((e) => {
