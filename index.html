@@ -9,44 +9,76 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="favicon" href="varela-3d-logo.png">
+    <link rel="apple-touch-icon" href="varela-3d-logo.png">
+    <link rel="canonical" href="">
+    <meta name="description" 
+    content="Bienvenidos a Varela-3D , imprenta de accesorios en 3D">
+    <meta name="theme-color" content="#222">
+    <meta property="og:title" name="twitter:title" 
+    content="Varela 3D">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:image" name="twitter:image" 
+    content="https://www.zonatech.es/wp-content/uploads/2021/06/impresoras-3D-0-80487459_m.jpg">
+    <meta property="og:url" name="twitter:url" content="">
+    <meta property="og:description" name="twitter:description" 
+    content="Bienvenidos a Varela-3D , imprenta de accesorios en 3D">
+    <meta property="og:type" content="website">
 </head>
 <body>
     <nav class="navegador">
-        <i  class="enlaces detail"><b>Catalogo</b></i>
+        <div class="flex">
+            <span class="nth1 burgers"></span>
+            <span class="nth2 burgers"></span>
+            <span class="nth3 burgers"></span>
+        </div>
+        <div class="menu-rsp quitar">
+            <i class="enlaces-rsp contactme-rsp"><b>Contacto</b></i>
+            <div class="modo-dark-rsp">
+                <img class="sol-luna-rsp" src="sol.png" alt="">
+                <img class="sol-luna-rsp" src="luna.png" alt="">
+                <span class="cambiar-modo-rsp"></span>
+            </div>
+        </div>
+        <div class="menuder-rsp">
+            <p class="contact-rsp">Contactanos mediante:</p><br>
+            <ul class="lista-rsp">
+                <a class="links-redes-rsp" href="https://www.instagram.com/varela.3d/?hl=es-la" target="BLANK"><li class="redes">Instagram</li></a>
+                <a class="links-redes-rsp" href="https://api.whatsapp.com/qr/KDGBJO3HIJXBF1?autoload=1&app_absent=0" target="BLANK"><li class="redes">WhatsApp</li></a>
+            </ul>
+        </div>
         <img class="logo" src="varela-3d-logo.png">
+        <div class="modo-dark">
+            <img class="sol-luna" src="sol.png" alt="">
+            <img class="sol-luna" src="luna.png" alt="">
+            <span class="cambiar-modo"></span>
+        </div>
         <i  class="enlaces contactme"><b>Contacto</b></i>
     </nav>
-    <div class="menuizq">
-        <ul class="categorias">
-            <li class="dia-noche">
-                <div class="modo-dark">
-                    <img class="sol-luna" src="sol.png" alt="">
-                    <img class="sol-luna" src="luna.png" alt="">
-                    <span class="cambiar-modo"></span>
-                </div>
-            </li>
-            <li class="formas">Llaveros</li>
-            <li class="formas">Figuras</li>
-            <li class="formas">Colgantes</li>
+    <div class="scrollspy">
+        <ul class="ul-secc">
+            <a class="secciones" href="#seccion1" ><li><b>Portada</b></li></a>
+            <a class="secciones" href="#seccion2" ><li><b>Carusel</b></li></a>
+            <a class="secciones" href="#seccion3" ><li><b>Material</b></li></a>
+            <a class="secciones" href="#seccion4" ><li><b>Galeria</b></li></a>
+            <a class="secciones" href="#seccion5" ><li><b>Contactanos</b></li></a>
         </ul>
     </div>
     <div class="menuder">
         <p class="contact">Contactanos mediante:</p><br>
         <ul class="lista">
-            <a  class="links-redes" href="https://www.instagram.com/varela.3d/?hl=es-la" target="BLANK"><li class="redes">Instagram</li></a><br>
-            <li class="redes"><a>Email</a></li><br>
-            <a  class="links-redes" href="https://api.whatsapp.com/qr/KDGBJO3HIJXBF1?autoload=1&app_absent=0" target="BLANK"><li class="redes">WhatsApp</li></a>
+            <a class="links-redes" href="https://www.instagram.com/varela.3d/?hl=es-la" target="BLANK"><li class="redes">Instagram</li></a><br>
+            <a class="links-redes" href="https://api.whatsapp.com/qr/KDGBJO3HIJXBF1?autoload=1&app_absent=0" target="BLANK"><li class="redes">WhatsApp</li></a>
         </ul>
     </div>
-    <main class="contenido">
+    <main id="seccion1" class="contenido sections">
         <div class="blur">
             <div class="titulos">
-                <h1 class="title">Diseño e Impresiones 3D</h1>
-                <h4 class="titledown">Diseñamos tus ideas y las hacemos realidad!</h4>
+                <h1 class="title" id="typed2"></h1>
             </div>
         </div>
     </main>
-	<div class="contslider">
+	<div id="seccion2" class="contslider sections">
 		<div class="slider" id="slider">
 			<div class="slid-img">
 				<img class="sld-img" src="diseño1.jpeg">
@@ -68,58 +100,41 @@
 		</div>
 	</div>
     <hr>
-    <div class="conteiner-info">
+    <div id="seccion3" class="conteiner-info sections">
         <h2 class="titulo">Trabajamos con:</h2>
-            <div class="info">
-                <img class="impresora" src="https://cdn-reichelt.de/bilder/web/xxl_ws/EB00/CREALITY3D_ENDER3V2_01.png">
-                <div class="texto">
-                    <h4><strong><b>Impresora: </b> Ender 3v2</strong></h4><br>
-                    <p><i>Contamos con la mas alta tecnologia de impresion en 3D,<br>
-                        100% de precision en cada detalle, cualquier modelo que <br>
-                        sea elegido podra ser creado con nuestras impresoras.</i>
-                    </p>        
-                </div>
-            </div>
-    </div>
-    <div class="centrar">
-        <div class="conteiner-galeria">
-            <div class="container">
-                <img src="diseño1.jpeg" alt="Diseños , impresiones , 3d" class="image">
-                <div class="middle">
-                    <div class="text"><i>LLavero "Neumaticos MONTI"</i></div>
-                </div>
-            </div>
-            <div class="container">
-                <img src="diseño2.jpeg" alt="Diseños , impresiones , 3d" class="image">
-                <div class="middle">
-                    <div class="text"><i>Llavero "GP Embragues"</i></div>
-                </div>
-            </div>
-            <div class="container">
-                <img src="diseño3.jpeg" alt="Diseños , impresiones , 3d" class="image">
-                <div class="middle">
-                    <div class="text"><i>Llavero Autopartes "Leiva"</i></div>
-                </div>
-            </div>
-            <div class="container">
-                <img src="diseño4.jpeg" alt="Diseños , impresiones , 3d" class="image">
-                <div class="middle">
-                    <div class="text"><i>Asesor de seguros "GP"</i></div>
-                </div>
-            </div>
-            <div class="container">
-                <img src="diseño5.jpeg" alt="Diseños , impresiones , 3d" class="image">
-                <div class="middle">
-                    <div class="text"><i>Llaveros Autopartes "Leiva"</i></div>
-                </div>
-            </div>
-            <div class="container">
-                <img src="diseño6.jpeg" alt="Diseños , impresiones , 3d" class="image">
-                <div class="middle">
-                    <div class="text"><i>Figura de accion "Apex"</i></div>
-                </div>
+        <div class="info">
+            <img class="impresora" src="https://cdn-reichelt.de/bilder/web/xxl_ws/EB00/CREALITY3D_ENDER3V2_01.png">
+            <div class="texto">
+                <h4><strong><b>Impresora: </b> Ender 3v2</strong></h4><br>
+                <p><i>Contamos con la mas alta tecnologia de impresion en 3D,<br>
+                    100% de precision en cada detalle, cualquier modelo que <br>
+                    sea elegido podra ser creado con nuestras impresoras.</i>
+                </p>        
             </div>
         </div>
     </div>
+    <div class="centrar">
+        <div class="search">
+            <input type="search" class="buscar" placeholder="🔍 Escriba su busqueda en minusculas">
+        </div>
+        <div id="seccion4" class="conteiner-galeria sections">
+            <img class="loader-imagenes" src="tail-spin.svg" alt="">
+        </div>
+        <form id="seccion5" class="formulario sections" target="_blank" action="https://formsubmit.co/lucas.caceres.lc@hotmail.com" method="POST">
+            <legend class="legend">Envia tu comentario</legend>
+            <input class="inputs" type="text" name="name" placeholder="Ingresa tu nombre" title="El nombre solo acepta letras y espacios" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+            <input class="inputs" type="email" name="email" placeholder="Ingresa tu email" title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+            <textarea class="inputs comentario" cols="30" rows="8" name="comentario" placeholder="Ingresa el comentario" title="No debes exceder los 250 caracteres" data-pattern="^.{1,255}$" required></textarea>
+            <input type="submit" value="Enviar">
+            <div class="loader none">
+                <img src="tail-spin.svg" alt="">
+            </div>
+            <div class="enviado none">
+                <p>Su mensaje ha sido enviado</p>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src='varela-3d.js'></script>
 </html>
